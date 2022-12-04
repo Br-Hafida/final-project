@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background: url(./logo/stade.jpg);
+    background-size: cover; 
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.menu-fifa{
+    background: rgba(37, 60, 124, 0.687);
+    /*text-align: center;*/
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 220px;
+   
+}
+.logo{
+    width: 25%;
+}
+.main-menu{
+  
+    float: right;
+    padding: 30px;
+    align-content: center;
+    width: 75%;
+   
+    
+}
+
+.menu-fifa ul {         
+    display: inline-flex;
+    list-style: none;
+     color:aliceblue;
+     margin-top: 120px
+     ;
+    
+    
+     
+}
+.menu-fifa ul li {
+    width: 140px;
+    margin: 17px;
+    padding: 15px;
+}
+.menu-fifa ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.prj, .menu-fifa ul li:hover
+{ background-color: rgba(47, 69, 110, 0.842) ;
+    border-radius: 3px;}
+
+.menu-fifa .fa{
+    margin-right: 8px;
+}
+.menu-fifa2{
+    display: none;
+}
+.menu-fifa ul li:hover .menu-fifa2{
+    display:block;
+    position:absolute;
+    background: rgba(95, 118, 153, 0.842);
+    margin-top: 10px;
+    margin-left:-10px;
+}
+.menu-fifa ul li:hover .menu-fifa2 ul{
+    display: block;
+    margin: 5px;
+}
+.menu-fifa ul li:hover .menu-fifa2 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-fifa ul li:hover .menu-fifa2 ul li:last-child{
+    border-bottom: none;
+}
+.menu-fifa ul li:hover .menu-fifa2 ul li a:hover{
+    color:rgba(25, 21, 88, 0.742)
+}
+.menu-fifa2{
+    display: none;
+    
+}
+ 
+html {
+    box-sizing: border-box;
+    height: 100;
+}
+*,
+*::before
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+.slides {
+   left: 50%;
+   margin-left: 960px;
+}
+.container2{
+    max-width: 1170px;
+    margin:auto
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+
+}
+footer{
+    background-color: rgba(37, 60, 124, 0.687);
+    padding: 70px 0;
+}
+.footer-col{
+  width: 19%;
+  padding: 0 15px;
+}
+.footer-col h4{ 
+    font-size: 18px;
+    color:#fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position:relative;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color:#bbb;
+    display: block;
+    transition: all 0,3s ease;}
+.footer-col ul li a:hover{
+    color: #ffff;
+    padding-left: 10px;

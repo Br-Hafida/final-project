@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/simul.js"></script>
+    <link rel="stylesheet" href="css/simul.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="data-players">
+        <h3>Morocco </h3>
+        <div>
+            <input type="text" id="txt" placeholder="Nom de l'élément à ajouter.">
+         <input type="button" onclick="Add()" value="Ajouter">
+        </div>
+        <table  id="table">
+            <tr> <td style="width: 50%;" >  Achraf Hakimi <td><input type="button" onclick="edit()" value="modifier"> </td><td><input type="button" onclick="delet()" value="supprimer"></td></tr>
+              <tr>   <td>Bono <td><input type="button" onclick="edit()" value="modifier"> </td><td><input type="button" onclick="delet()" value="supprimer"></td> </tr>
+                  <tr>  <td>Romain Saiss <td><input type="button" onclick="edit()" value="modifier"> </td><td><input type="button" onclick="delet()" value="supprimer"></td> </tr>  
+                <tr><td>  Nayf Aguerd <td><input type="button" onclick="edit()" value="modifier"> </td><td><input type="button" onclick="delet()" value="supprimer"> </td></tr> 
+               
+            
+               <tr>  <td> Noussair Mazraoui <td><input type="button" onclick="edit()" value="modifier"> </td><td><input type="button" onclick="delet()" value="supprimer"></td></tr>
+               <tr> <td> Sofyan Amrabat<td><input type="button" onclick="edit()" value="modifier"> </td><td><input type="button" onclick="delet()" value="supprimer"></td></tr>
+                <tr> <td> Azzedine Ounahi<td><input type="button" onclick="edit()" value="modifier"> </td><td><input type="button" onclick="delet()" value="supprimer"></td></tr>
+                <tr> <td> Selim Amallah <td><input type="button" onclick="edit()" value="modifier"> </td><td><input type="button" onclick="delet()" value="supprimer"></td></tr>
+                <tr> <td> Hakim Ziyech<td><input type="button" onclick="edit()" value="modifier"> </td><td><input type="button" onclick="delet()" value="supprimer"></td></tr>
+                <tr> <td> Soufiane Boufal <td><input type="button" onclick="edit()" value="modifier"> </td><td><input type="button" onclick="delet()" value="supprimer"></td></tr>
+                <tr><td> Youssef En-Nesyri<td><input type="button" onclick="edit()" value="modifier"> </td><td><input type="button" onclick="delet()" value="supprimer"> </td> </tr>
+             
+                  </table>
+                  <br>
+                  <br>
+                  <div class="section" id="palmarés">
+                    <h3>Palmarès de l'équipe du Maroc de football</h3>
+                    <h3> Coupe du Monde</h3> 
+                        <li> 6 participations (1970, 1986, 1994, 1998, 2018, 2022) </li>
+                         <h3> CAN </h3> 
+                         <li>18 participations (1972, 1976, 1978, 1980, 1986, 1988, 1992, 1998, 2000, 2002, 2004, 2006, 2008, 2012, 2013, 2017, 2019, 2021) </li> 
+                         <li> 1 victoire (1976)</li>  
+                         <li>  1 fois troisième (1980)</li> 
+                         <li> 1 fois finaliste (2004)</li> 
+                         <li> 2 fois quatrième (1988, 1986)</li> 
+                </div>
+</div>
+<script>
+
+function Add() {
+        var tr = document.createElement("tr");
+        var txt = document.getElementById("txt");
+        
+        
+        tr.innerHTML = txt.value +'<a><tr><td><input type="button"  onclick="edit(this)" value="modifier"> </td><td><input type="button"  onclick="remove(this)" value="supprimer"></td></tr></a>';
+        
+    
+        txt.value = document.getElementById("txt").innerHTML;
+        // li.addEventListener("dblclick", (event) => {
+        // event.target.parentNode.removeChild(event.target);
+        // });
+        // Ou encore
+        tr.addEventListener("dblclick", (event) => {
+            document.getElementById("table").removeChild(event.target)
+        });
+        var ulEle = document.getElementById("table");
+        ulEle.appendChild(tr);
+        
+    }
+    function edit(elem){
+    var tr = document.createElement("tr");
+    var txt = document.getElementById("txt");
+    var s = elem.parentNode.parentNode;
+    
+    tr.innerHTML = txt.value +'<a><tr><td><input type="button"  onclick="edit(this)" value="modifier"> </td><td><input type="button"  onclick="remove(this)" value="supprimer"></td></tr></a>';
+    
+
+     document.getElementById("table").replaceChild(tr,s);
+}
+    
+    function remove (elem) {
+        el = elem.parentNode.parentNode;
+        el.parentNode.removeChild(el);
+    }
+    function remove(element) {
+        console.log(element.parentElement.parentElement)
+        element.parentElement.parentElement.remove() 
+    }
+    </script>

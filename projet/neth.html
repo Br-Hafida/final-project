@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/simul.css" />
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="data-players">
+<h3>Pays-Bas </h3>
+<div>
+    <input type="text" id="txt" placeholder="Nom de l'élément à ajouter.">
+ <input type="button" onclick="Add()" value="Ajouter">
+
+</div>
+
+
+           <table id="table" > 
+    
+                   <tr> <td style="width: 50%;" > Frenkie de Jong </td><td><input type="button" onclick="edit(this)" value="modifier"> </td> <td><input type="button" onclick="remove(this)" value="supprimer"></td> </tr>
+                    <tr> <td>Andries Noppert<td> <input type="button" onclick="edit(this)" value="modifier"> </td><td><input type="button" onclick="remove(this)" value="supprimer"> </td> </tr>
+                      <tr>  <td>Virgil van Dijk<td><input type="button" onclick="edit(this)" value="modifier"> </td><td><input type="button" onclick="remove(this)" value="supprimer"> </td> </tr>  
+                    <tr><td>  Matthijis de Ligt  <td><input type="button" onclick="edit(this)" value="modifier"> </td><td><input type="button" onclick="remove(this)" value="supprimer"> </td></tr> 
+                    <tr> <td>  Daley Blind <td><input type="button" onclick="edit(this)" value="modifier"> </td><td><input type="button" onclick="remove(this)" value="supprimer"> </td></tr>
+                
+                    <tr>  <td> Nathan Aké<td><input type="button" onclick="edit(this)" value="modifier"> </td><td><input type="button" onclick="remove(this)" value="supprimer"></td></tr>
+                   
+                    <tr> <td> Cody Gakpo<td><input type="button" onclick="edit(this)" value="modifier"> </td><td><input type="button" onclick="remove(this)" value="supprimer"> </td></tr>
+                    <tr> <td> Xavi simons <td><input type="button" onclick="edit(this)" value="modifier"> </td><td><input type="button" onclick="remove(this)" value="supprimer"></td></tr>
+                    <tr> <td> Davy Klaassen<td><input type="button" onclick="edit(this)" value="modifier"> </td><td><input type="button" onclick="remove(this)" value="supprimer"></td></tr>
+                    <tr> <td> Memphis Depay <td><input type="button" onclick="edit(this)" value="modifier"> </td><td><input type="button" onclick="remove(this)" value="supprimer"></td></tr>
+                    <tr><td> Luuk de Jong <td><input type="button" onclick="edit(this)" value="modifier"> </td><td><input type="button" onclick="remove(this)" value="supprimer"></td> </tr>                   
+                
+                 </table>
+                 
+
+                 <br>
+                 <br>
+                    
+        <div class="section" id="palmarés">
+            <h3>Palmarès de l'équipe du Pays-Bas de football</h3>
+            <h3> Coupe du Monde</h3> 
+                <li>11 participations (1934, 1938, 1974, 1978, 1990, 1994, 1998, 2006, 2010, 2014, 2022) </li>
+                <li>    3 fois finaliste (1974, 1978, 2010) </li>  
+                 <li> 1 fois troisième (2014)</li>   
+                 <li>1 fois quatrième (1998) </li> 
+                 <h3> Euro</h3> 
+                 <li>10 participations (1976, 1980, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2020) </li> 
+                 <li> 1 victoire (1988)</li>  
+                 <li>  1 fois troisième (1976)</li> 
+                 <li> 1 fois finaliste (2019</li>  
+        </div>
+    </div>
+    <br>
+    <br>
+</body>
+    <script>
+        function Add() {
+        var tr = document.createElement("tr");
+        var txt = document.getElementById("txt");
+        
+        
+        tr.innerHTML = txt.value +'<a><tr><td><input type="button"  onclick="edit(this)" value="modifier"> </td><td><input type="button"  onclick="remove(this)" value="supprimer"></td></tr></a>';
+        
+    
+        txt.value = document.getElementById("txt").innerHTML;
+        // li.addEventListener("dblclick", (event) => {
+        // event.target.parentNode.removeChild(event.target);
+        // });
+        // Ou encore
+        tr.addEventListener("dblclick", (event) => {
+            document.getElementById("table").removeChild(event.target)
+        });
+        var ulEle = document.getElementById("table");
+        ulEle.appendChild(tr);
+        
+    }
+    function edit(elem){
+    var tr = document.createElement("tr");
+    var txt = document.getElementById("txt");
+    var s = elem.parentNode.parentNode;
+    
+    tr.innerHTML = txt.value +'<a><tr><td><input type="button"  onclick="edit(this)" value="modifier"> </td><td><input type="button"  onclick="remove(this)" value="supprimer"></td></tr></a>';
+    
+
+     document.getElementById("table").replaceChild(tr,s);
+}
+    
+    function remove (elem) {
+        el = elem.parentNode.parentNode;
+        el.parentNode.removeChild(el);
+    }
+    function remove(element) {
+        console.log(element.parentElement.parentElement)
+        element.parentElement.parentElement.remove() 
+    }
+    
+        
+    </script>

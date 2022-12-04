@@ -1,0 +1,25 @@
+#table, td{
+    border: 1px solid;
+    width: auto;
+    background-color: royalblue;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+.section {
+    border: 1px solid;
+    position: relative;
+    width: 40%;
+    height: 50%;
+    
+    border-color: rgb(18, 18, 35);
+    background-origin: border-box;
+    border-radius:auto;
+    background-color: rgba(132, 113, 113, 0.489);
+
+    
+
+}
+button {
+    background-color: aqua;
+}

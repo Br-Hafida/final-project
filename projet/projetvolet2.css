@@ -1,0 +1,101 @@
+
+/*style de groupes , matches et classement ********************************************/
+
+    .style{
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height:350px;
+    width: 900px;
+    background: rgb(245, 244, 244);
+    z-index: 100;
+    transition: all 0.5s ease;
+   
+    }
+    .styled-table-matchs {
+      border-collapse: collapse;
+      margin: 2px 0;
+      /*font-size: 0.9em;*/
+      font-family: sans-serif;
+      width: 100%;
+      height: 350px;
+      
+  }
+  .teams-rank-matchs{
+    background-color:purple;
+    color: #ffffff;
+    text-align: left;
+  }
+  .style-name{
+    text-align: center;
+
+  }
+  .teams-rank-groupes{
+    height: 80px;
+  }
+  .card2 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 0.5px 1px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    padding: 3px;
+    border-radius: 10px;
+    width: 100%;
+   
+    
+  }
+
+  .group-members{
+    background-color: white;
+    flex-direction: column;
+  }
+    
+  
+  .team{
+    margin-top: 10px;
+
+  }
+  
+   
+
+  .styled-table {
+    border-collapse: collapse;
+    margin: 2px 0;
+    /*font-size: 0.9em;*/
+    font-family: sans-serif;
+    width: 100%;
+    
+}
+
+.styled-table th, .styled-table td {
+    padding: 2px 3px;
+    font-size: 13px;
+}
+
+.styled-table thead .goals-rank {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    
+}
+.styled-table thead .teams-rank {
+    background-color:purple;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table tbody tr {
+    border-bottom: 0.5px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+iframe{
+  margin: 0;
+}
+.style-player{
+  text-decoration: none;
+  color: black;
+}
+/*fin de styles groupes , matches et classement *********************************************************/

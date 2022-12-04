@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: serif;
+    
+
+}
+
+header{
+    width: 100%;
+    height: 120px;
+    background: rgba(5, 26, 82, 0.71);
+}
+    
+ 
+body {
+    
+   background: rgba(250, 252, 255, 0.795);
+   background-image: url(./flags/WhatsApp\ Image\ 2022-12-02\ at\ 17.03.36.jpeg);
+    box-sizing: border-box;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: sans-serif;
+   
+
+}
+
+
+
+#logo-fifa{
+    position: absolute;
+
+    
+  
+}
+#logo-img{
+    margin-top: 2px;
+    width: 160px;
+    margin-left: 40px;
+    -webkit-filter: drop-shadow(5px 5px 60px rgb(119, 117, 117) );
+    filter: drop-shadow(5px 5px 5px rgb(117, 113, 113));
+}
+
+
+   .sroll{
+   
+    height: 150px;
+   
+   }
+
+  .scrolling{
+    display: flex;
+    list-style: none;
+  }
+   
+.menu-fifa{
+    background: rgba(5, 26, 82, 0.71);
+    text-align: center;
+    margin-left: 0;
+    height: 80px;
+}
+
+.menu-fifa ul {         
+    display: inline-flex;
+    list-style: none;
+     color:aliceblue;
+     margin-top: 6px; 
+}
+.menu-fifa ul li {
+    width: 180px;
+    margin: 17px;
+    padding: 15px;
+}
+.menu-fifa ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.prj, .menu-fifa ul li:hover
+{ background-color: rgba(37, 66, 153, 0.842) ;
+    border-radius: 3px;}
+
+.menu-fifa .fa{
+    margin-right: 8px;
+}
+.menu-fifa2{
+    display: none;
+}
+.menu-fifa ul li:hover .menu-fifa2{
+    display:block;
+    position:absolute;
+    background: rgba(95, 118, 153, 0.842);
+    margin-top: 10px;
+    margin-left:-10px;
+}
+.menu-fifa ul li:hover .menu-fifa2 ul{
+    display: block;
+    margin: 5px;
+}
+.menu-fifa ul li:hover .menu-fifa2 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-fifa ul li:hover .menu-fifa2 ul li:last-child{
+    border-bottom: none;
+}
+.menu-fifa ul li:hover .menu-fifa2 ul li a:hover{
+    color:rgba(25, 21, 88, 0.742)
+}
+.menu-fifa2{
+    display: none;
+}
+.container{
+    margin: 0;
+    min-height: 1100px;
+     padding: 0;
+    min-width: 1050px;
+   }
+
+
+.volet5{
+   margin: 0;
+    float: right;
+    background-color:  rgba(5, 26, 82, 0.637);;
+    padding: 15px;
+    border-radius: 10px;
+    width: 25%;
+    height: 1050px;
+   
+  } 
+  
+  
+  .container .carre:hover {
+    z-index: 1;
+    transform: scale(1);
+    margin-left:2px ;
+     
+    padding: 10px;
+    border-radius: 20px;
+    
+    background-color: rgba(255, 255, 255, 0.429);
+    
+}
+.container2{
+    margin: 0px;
+   background-color:  rgba(5, 26, 82, 0.637);;
+ 
+    height:1100px ;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.iframe-container2{
+    width: 75%;
+}
+.volet2{
+    margin: 0px;
+  
+    padding: 5px;
+    border-radius: 10px;
+    width:32%;
+    height: 1050px;
+   
+
+}
+.volet3{
+ 
+    background-color:  rgba(200, 204, 214, 0.637);;
+    padding: 15px;
+    border-radius: 10px;
+    height:400px;
+    width: 600px;
+    margin: 3px;
+
+    
+}
+.volet4{
+    
+    background-color:  rgba(5, 26, 82, 0.637);;
+    padding: 15px;
+    border-radius: 10px;
+    width: 600px;
+    height: 610px;
+    padding: 3px;
+}
+
+.volet3-and-volet4{
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+    min-height: 1050px;
+}
+
+
+.content {
+    color: #fff;
+    margin-top: 0%;
+   }
+ h2 { 
+    font-size: 20px;
+    color: rgba(107, 115, 204, 0.968);
+   
+ }
+ h2:hover{
+    color:rgb(23, 75, 217);
+    border-bottom: 1px solid rgb(23, 75, 217);
+ }
+    
+
+a {
+    text-decoration: none;
+    
+    
+}
+
+ p{
+    font-size: 13px;
+   
+ }
+
+ .btnA
+ {
+    margin-left: 97%;
+    background-color: white; 
+  color: black; 
+  border: 2px solid #4b57b1;
+
+ }
+ .btnB{
+    margin-left: 97%;
+    background-color: white; 
+  color: black; 
+  border: 2px solid #4b57b1;
+}
+.btnC
+{
+   
+   background-color: white; 
+ color: black; 
+ border: 2px solid #4b57b1;
+
+}
+.btnD
+{
+  
+   background-color: white; 
+ color: black; 
+ border: 2px solid #4b57b1;
+
+}
+.btnE
+{
+  
+   background-color: white; 
+ color: black; 
+ border: 2px solid #4b57b1;
+
+}
+.btnF
+{
+   background-color: white; 
+ color: black; 
+ border: 2px solid #4b57b1;
+
+}
+.btnG
+{
+  
+   background-color: white; 
+ color: black; 
+ border: 2px solid #4b57b1;
+
+}
+.btnH
+{
+  
+   background-color: white; 
+ color: black; 
+ border: 2px solid #4b57b1;
+
+}
+
+
+
+ .container3{
+    max-width: 1170px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+
+}
+
+footer{
+    background-color: rgba(5, 26, 82, 0.71);
+    padding: 70px 0;
+    
+}
+.footer-col{
+  width: 19%;
+  padding: 0 15px;
+}
+.footer-col h4{ 
+    font-size: 18px;
+    color:#fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position:relative;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color:#bbb;
+    display: block;
+    transition: all 0,3s ease;}
+.footer-col ul li a:hover{
+    color:#fff;
+    padding-left: 10px;
+}
+
+/*---css for equipe-----------------------------------------------------------------------------------------------------*/
+
+#eqp1{
+   
+    margin-left: 15%;
+    padding-top: 10%;
+  
+  }
+  img.allimg{
+    border-radius: 25px;
+    border: 2px solid #8560c1;
+    width : 100px;
+    height: 100px;
+  }
+  #fichea{
+    display: none;
+    margin-left: 15%;
+    padding-top: 7%;
+
+}
+#fichea{
+    width: 50%;
+    border:rgb(92, 104, 205) 4px double;
+    margin-left: 30%;
+    margin-top: 20%;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 0%;
+    display: none;
+    box-shadow: 0 9px 7px 0 rgba(0, 0, 0, 0.3), 0 6px 70px 0 rgba(0, 0, 0, 0.20);
+    height: 300px;
+}
+p.vf:nth-child(odd) {
+    background-color: #0d559312;
+   }
+
+.im{
+	margin-left: 140px;
+	border-radius: 2px;
+    border: 2px solid #55709a;
+}
+  /*---css for equipe-----------------------------------------------------------------------------------------------------*/
+  

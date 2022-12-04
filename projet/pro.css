@@ -1,0 +1,205 @@
+#eqp1{
+    display: none;
+    margin-left: 15%;
+    padding-top: 10%;
+
+}
+#eqp2{
+    display: none;
+    margin-left: 15%;
+    padding-top: 10%;
+
+}
+#eqp3{
+    display: none;
+    margin-left: 15%;
+    padding-top: 10%;
+
+}
+#eqp4{
+    display: none;
+    margin-left: 15%;
+    padding-top: 10%;
+
+}
+#eqp5{
+    display: none;
+    margin-left: 15%;
+    padding-top: 10%;
+
+}
+#eqp6{
+    display: none;
+    margin-left: 15%;
+    padding-top: 10%;
+
+}
+#eqp7{
+    display: none;
+    margin-left: 15%;
+    padding-top: 10%;
+
+}
+#eqp8{
+    display: none;
+    margin-left: 15%;
+    padding-top: 10%;
+
+}
+/**********************************************************************************************************/
+#fichea{
+    display: none;
+    margin-left: 15%;
+    padding-top: 7%;
+
+}
+#ficheb{
+    display: none;
+    margin-left: 15%;
+    padding-top: 7%;
+
+}
+#fichec{
+    display: none;
+    margin-left: 15%;
+    padding-top: 7%;
+
+}
+#fiched{
+    display: none;
+    margin-left: 15%;
+    padding-top: 7%;
+
+}
+#fichee{
+    display: none;
+    margin-left: 15%;
+    padding-top: 7%;
+
+}
+#fichef{
+    display: none;
+    margin-left: 15%;
+    padding-top: 7%;
+
+}
+#ficheg{
+    display: none;
+    margin-left: 15%;
+    padding-top: 7%;
+
+}
+#ficheh{
+    display: none;
+    margin-left: 15%;
+    padding-top: 7%;
+
+}
+/**********************************************************************************************************/
+#fichea{
+    width: 47%;
+    border:rgb(92, 104, 205) 4px double;
+    margin-left: 30%;
+    margin-top: 20%;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 0%;
+    display: none;
+    box-shadow: 0 9px 7px 0 rgba(0, 0, 0, 0.3), 0 6px 70px 0 rgba(0, 0, 0, 0.20);
+}
+
+#ficheb{
+    width: 47%;
+    border:rgb(92, 104, 205) 4px double;
+    margin-left: 30%;
+    margin-top: 20%;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 0%;
+    display: none;
+    box-shadow: 0 9px 7px 0 rgba(0, 0, 0, 0.3), 0 6px 70px 0 rgba(0, 0, 0, 0.20);
+}
+#fichec{
+    width: 47%;
+    border:rgb(92, 104, 205) 4px double;
+    margin-left: 30%;
+    margin-top: 20%;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 0%;
+    display: none;
+    box-shadow: 0 9px 7px 0 rgba(0, 0, 0, 0.3), 0 6px 70px 0 rgba(0, 0, 0, 0.20);
+}
+#fiched{
+    width: 47%;
+    border:rgb(92, 104, 205) 4px double;
+    margin-left: 30%;
+    margin-top: 20%;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 0%;
+    display: none;
+    box-shadow: 0 9px 7px 0 rgba(0, 0, 0, 0.3), 0 6px 70px 0 rgba(0, 0, 0, 0.20);
+}
+#fichee{
+    width: 47%;
+    border:rgb(92, 104, 205) 4px double;
+    margin-left: 30%;
+    margin-top: 20%;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 0%;
+    display: none;
+    box-shadow: 0 9px 7px 0 rgba(0, 0, 0, 0.3), 0 6px 70px 0 rgba(0, 0, 0, 0.20);
+}
+#fichef{
+    width: 47%;
+    border:rgb(92, 104, 205) 4px double;
+    margin-left: 30%;
+    margin-top: 20%;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 0%;
+    display: none;
+    box-shadow: 0 9px 7px 0 rgba(0, 0, 0, 0.3), 0 6px 70px 0 rgba(0, 0, 0, 0.20);
+}
+#ficheg{
+    width: 47%;
+    border:rgb(92, 104, 205) 4px double;
+    margin-left: 30%;
+    margin-top: 20%;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 0%;
+    display: none;
+    box-shadow: 0 9px 7px 0 rgba(0, 0, 0, 0.3), 0 6px 70px 0 rgba(0, 0, 0, 0.20);
+}
+#ficheh{
+    width: 47%;
+    border:rgb(92, 104, 205) 4px double;
+    margin-left: 30%;
+    margin-top: 20%;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 0%;
+    display: none;
+    box-shadow: 0 9px 7px 0 rgba(0, 0, 0, 0.3), 0 6px 70px 0 rgba(0, 0, 0, 0.20);
+}
+/**********************************************************************************************************/
+img.allimg{
+    border-radius: 25px;
+    border: 2px solid #8560c1;
+    width : 100px;
+    height: 100px;
+}
+
+p.vf:nth-child(odd) {
+    background-color: #0d559312;
+   }
+
+.im{
+	margin-left: 350px;
+	border-radius: 2px;
+    border: 2px solid #55709a;
+}
+
